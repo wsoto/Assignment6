@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>JQuery Examples</title>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style>
+div{
+	background-color: green;
+	height: 200px;
+	width: 300px;
+	position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<!--Hiding Elements
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p> -->
+
+
+<!-- Say my name
+<button>Say my name</button> -->
+
+<button>Start Animation</button>
+<div></div>
+
+
+<script>
+//Hiding elements
+/* $(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();s
+    });
+});
+*/
+//Say my name
+/* $(document).ready(function(){
+    $("button").click(function(){
+        alert($("Wendy"));
+    });
+});
+
+*/ 
+//Moving box to the left 
+/* $(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+*/
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});			
+
+</script>
+
+</body>
+</html>

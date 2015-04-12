@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>JQuery Examples</title>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style>
+	.color-block{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+</style>
+
+</head>
+
+
+<body>
+
+<div id="hello" style="background-color: yellow;">Hello</div>
+<div class="color-block">ABC</div>
+
+
+
+<script>
+$(document).ready(function(){
+	//Code that gets run when the page loads//
+
+	$(".color-block").animate({
+		width: 400
+	}, 2000, function() {
+		$("#hello").animate({
+  			opacity: 0.25,
+  			width: '70%'
+		}, 2000);
+	});
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+	</html>
